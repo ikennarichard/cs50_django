@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    color: pink;
+}
+
+
+p, li {
+    color: rgba(100, 23, 37, 1);
+}
