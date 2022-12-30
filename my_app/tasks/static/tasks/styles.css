@@ -4,15 +4,35 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    border: 1px solid;
+}
+
+
+main {
+    display: grid;
+    margin-block: auto;
 }
 
 
 h1 {
-    text-align: center;
-    color: pink;
+    text-align: center; 
+    color: rgb(253, 136, 155);
 }
+
+
 
 
 p, li {
     color: rgba(100, 23, 37, 1);
 }
+
+
+a {
+    text-decoration: none;
+    background-color: rgb(253, 136, 155, 0.7);
+    width: fit-content;
+    color: white;
+    padding: 0.5em;
+    margin-inline: auto;
+}
+

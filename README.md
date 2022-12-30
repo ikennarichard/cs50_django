@@ -58,3 +58,26 @@ In our top project(my_app) urls.py we want to add a path with a route and  inclu
 
 we use the render function to render html from the templates directory, the context contains things like variable and other expresions 
 _render(request, 'template.html', {context})_
+...
+
+
+
+
+layout defines the template of our html, it sets the default look that the other templates will inherit from _layout.html_
+
+
+
+
+
+
+when we click on a link the impicit method used is get, while _post_ is used when submitting info on the web 
+
+security defect inherent in forms that are not designed in a secure way,it means someone on a different website could forge a request _cross site request forgery_ the CSRF token is used to validate requests, it creates a unique token for each section
+
+django middleware is the ability for django to intervene in the request/response process. django ensures that we have CSRF token whenever we are submitting a request via 'method=post'.
+_submitting data_
+...
+
+
+
+we can also import forms from django to help us in setting up/interacting with forms, if you dont provide a label for the 'task = charfield(label='')' django will use the variable name as the label  _django forms_

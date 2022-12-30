@@ -1,23 +1,9 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="{% static 'tasks/styles.css' %}">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasks App</title>
-</head>
-<body>
+{% extends "tasks/layout.html" %}
+{% block body %}
+
     <main>
-        <h1> Tasks App</h1>
-    <p> Hello {{name}}, thanks for using our tasks app</p>
-    <ul>
-        {% if task %}
-        <li>{{ task1 }}</li>  
-        {% endif %}
-    </ul>
+    <h1> Tasks App</h1>
+    <p> Hello, thanks for using our tasks app</p>
+    <a href="{% url 'tasks:add' %}">Add a task</a>
     </main>
-    
-</body>
-</html>
+{% endblock %}

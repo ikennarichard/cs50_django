@@ -1,0 +1,16 @@
+<!-- inheritance in django -->
+{% extends "tasks/layout.html" %}
+{% load static %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'tasks/form.css' %}">
+<main>
+    <h1>Add Task</h1>
+<form action="{% url 'tasks:home' %}" method="post">
+
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Submit</button>
+    
+</form>
+</main>
+{% endblock %}
