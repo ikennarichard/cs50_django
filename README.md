@@ -43,7 +43,7 @@ add app to Installed Apps list in settings.py _settings.py_
 you can think of each view as something the user wants to see. 
 the (request) argument in the view function represents the request the user wants to make
 
-you can specify additional parameters for your view function, this argument can be used in the path('<str:name>') in urls.py to return anything value passed to the name variable_views.py_
+you can specify additional parameters for your view function, this argument can be used in the path('<str:name>') in urls.py to return anything value passed to the name variable _views.py_
 ...
 
 
@@ -81,3 +81,7 @@ _submitting data_
 
 
 we can also import forms from django to help us in setting up/interacting with forms, if you dont provide a label for the 'task = charfield(label='')' django will use the variable name as the label  _django forms_
+
+
+
+_sessions_ are a way for django to remember who you are, so it store data about your sessions or data

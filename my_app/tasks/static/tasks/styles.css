@@ -22,8 +22,9 @@ h1 {
 
 
 
-p, li {
+li {
     color: rgba(100, 23, 37, 1);
+    text-transform: capitalize;
 }
 
 
@@ -35,4 +36,7 @@ a {
     padding: 0.5em;
     margin-inline: auto;
 }
+
+
+
 

@@ -49,3 +49,12 @@ button {
     
 }
 
+
+.view {
+    text-decoration: underline;
+    text-transform: uppercase;
+    background-color: transparent;
+    display: inline-block;
+    color: rgb(253, 136, 155);
+    margin-top: 5px;
+}
